@@ -1,12 +1,12 @@
 package oopConcepts;
 
-public class Lion extends Animal{
+public class Cat extends Animal{
 	private String color;
 	private char gender;
 	AnimalNoise noise;
 	
-	public Lion(String type, boolean car, String food, int legs, String color, char gender) {
-		super(type, car, food, legs);
+	public Cat(String name, String type, boolean car, String food, int legs, String color, char gender) {
+		super(name, type, car, food, legs);
 		this.color = color;
 		this.gender = gender;
 	}
