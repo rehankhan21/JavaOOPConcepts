@@ -17,6 +17,9 @@ public class Animal {
 	}
 	
 	public void display() {
+		System.out.println("----------------");
+		System.out.println("Animals");
+		System.out.println("----------------");
 		System.out.println("This animal is a: " + this.name);
 		System.out.println("This animal is a: " + this.type);
 		System.out.println("is a carnovore: " + this.carnovore);
