@@ -6,6 +6,7 @@ public class Student extends Person1 implements PersonInterface {
 	float subject1, subject2, subject3;
 	String student_major;
 	double totalscore;
+	Address addr;
 	
 	public Student(int id, String name, int age, char gender, String major, float subject1,
 			float subject2, float subject3) {
@@ -19,6 +20,14 @@ public class Student extends Person1 implements PersonInterface {
 		this.subject1 = subject1;
 		this.subject2 = subject2;
 		this.subject3 = subject3;
+	}
+	
+	public void createAddr(String city, String state, String street, int zipcode){
+		addr = new Address();
+		addr.city = city;
+		addr.state = state;
+		addr.zipcode = zipcode;
+		addr.street = street;
 	}
 	
 	public void calculate() {
@@ -47,6 +56,10 @@ public class Student extends Person1 implements PersonInterface {
 		super.display();
 		System.out.println("Major "+this.student_major);
 		//System.out.println("Total Score: "+this.totalscore);
+		System.out.println("City: " + addr.city);
+		System.out.println("State: " + addr.state);
+		System.out.println("Zipcode: " + addr.zipcode);
+		System.out.println("Street: " + addr.street);
 		
 	}
 }

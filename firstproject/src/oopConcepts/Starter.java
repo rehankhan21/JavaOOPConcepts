@@ -6,10 +6,10 @@ public class Starter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int id, age, bonus;
+		int id, age, bonus, zipcode;
 		float sub1, sub2, sub3, salary;
 		char gender;
-		String name, major, task1, task2;
+		String name, major, task1, task2, city, street, state;
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Enter Employee name: ");
@@ -35,12 +35,28 @@ public class Starter {
 		task1 = scan.nextLine();
 		
 		System.out.println("Enter Employee second task: ");
-		//scan.nextLine();
+		scan.nextLine();
 		task2 = scan.nextLine();
+		
+		System.out.println("Enter Employee City: ");
+		scan.nextLine();
+		city = scan.nextLine();
+		
+		System.out.println("Enter Employee State: ");
+		scan.nextLine();
+		state = scan.nextLine();
+		
+		System.out.println("Enter Employee Street: ");
+		//scan.nextLine();
+		street = scan.nextLine();
+		
+		System.out.println("Enter Employee first task: ");
+		zipcode = scan.nextInt();
 		
 		Employee emp1 = new Employee(id, name, age, gender, salary);
 		//Employee emp2 = new Employee(201, "Bob" , 21, 'f', 40000);
 		
+		emp1.createAddr(city, state, street, zipcode);
 		emp1.display();
 		//emp2.display();
 		System.out.println("netSalary with bonus:  "+emp1.calculate(bonus));
@@ -74,13 +90,29 @@ public class Starter {
 		scan.nextLine();
 		major = scan.nextLine();
 		
-		System.out.println("Enter Employee first class: ");
-		//scan.nextLine();
+		System.out.println("Enter Student first class: ");
+		scan.nextLine();
 		task1 = scan.nextLine();
 		
-		System.out.println("Enter Employee second class: ");
-		//scan.nextLine();
+		System.out.println("Enter Student second class: ");
+		scan.nextLine();
 		task2 = scan.nextLine();
+		
+
+		System.out.println("Enter Student City: ");
+		scan.nextLine();
+		city = scan.nextLine();
+		
+		System.out.println("Enter Student State: ");
+		scan.nextLine();
+		state = scan.nextLine();
+		
+		System.out.println("Enter Student Street: ");
+		//scan.nextLine();
+		street = scan.nextLine();
+		
+		System.out.println("Enter Student first task: ");
+		zipcode = scan.nextInt();
 		
 		//String.format("%.3f", avg);
 		
