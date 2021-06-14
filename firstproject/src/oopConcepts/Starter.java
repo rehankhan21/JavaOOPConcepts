@@ -35,22 +35,22 @@ public class Starter {
 		task1 = scan.nextLine();
 		
 		System.out.println("Enter Employee second task: ");
-		scan.nextLine();
+		//scan.nextLine();
 		task2 = scan.nextLine();
 		
 		System.out.println("Enter Employee City: ");
-		scan.nextLine();
+		//scan.nextLine();
 		city = scan.nextLine();
 		
 		System.out.println("Enter Employee State: ");
-		scan.nextLine();
+		//scan.nextLine();
 		state = scan.nextLine();
 		
 		System.out.println("Enter Employee Street: ");
 		//scan.nextLine();
 		street = scan.nextLine();
 		
-		System.out.println("Enter Employee first task: ");
+		System.out.println("Enter Employee Zipcode: ");
 		zipcode = scan.nextInt();
 		
 		Employee emp1 = new Employee(id, name, age, gender, salary);
@@ -65,7 +65,7 @@ public class Starter {
 		
 		
 		System.out.println("Enter student name: ");
-		//scan.nextLine();
+		scan.nextLine();
 		name = scan.nextLine();
 		
 		System.out.println("Enter student id: ");
@@ -91,27 +91,26 @@ public class Starter {
 		major = scan.nextLine();
 		
 		System.out.println("Enter Student first class: ");
-		scan.nextLine();
+		//scan.nextLine();
 		task1 = scan.nextLine();
 		
 		System.out.println("Enter Student second class: ");
-		scan.nextLine();
+		//scan.nextLine();
 		task2 = scan.nextLine();
-		
 
 		System.out.println("Enter Student City: ");
-		scan.nextLine();
+		//scan.nextLine();
 		city = scan.nextLine();
 		
 		System.out.println("Enter Student State: ");
-		scan.nextLine();
+		//scan.nextLine();
 		state = scan.nextLine();
 		
 		System.out.println("Enter Student Street: ");
 		//scan.nextLine();
 		street = scan.nextLine();
 		
-		System.out.println("Enter Student first task: ");
+		System.out.println("Enter Student Zipcode: ");
 		zipcode = scan.nextInt();
 		
 		//String.format("%.3f", avg);
