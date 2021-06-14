@@ -64,66 +64,68 @@ public class Starter {
 //		Employee.totalPerson();
 		
 		
-		System.out.println("Enter student name: ");
-		scan.nextLine();
-		name = scan.nextLine();
-		
-		System.out.println("Enter student id: ");
-		id = scan.nextInt();
-		
-		System.out.println("Enter student age: ");
-		age = scan.nextInt();
-		
-		System.out.println("Enter grade for subject 1: ");
-		sub1 = scan.nextFloat();
-		
-		System.out.println("Enter grade for subject 2: ");
-		sub2 = scan.nextFloat();
-		
-		System.out.println("Enter grade for subject 3: ");
-		sub3 = scan.nextFloat();
-		
-		System.out.println("Enter Student Gender: ");
-		gender = scan.next().charAt(0);
-		
-		System.out.println("Enter Student Major: ");
-		scan.nextLine();
-		major = scan.nextLine();
-		
-		System.out.println("Enter Student first class: ");
-		//scan.nextLine();
-		task1 = scan.nextLine();
-		
-		System.out.println("Enter Student second class: ");
-		//scan.nextLine();
-		task2 = scan.nextLine();
-
-		System.out.println("Enter Student City: ");
-		//scan.nextLine();
-		city = scan.nextLine();
-		
-		System.out.println("Enter Student State: ");
-		//scan.nextLine();
-		state = scan.nextLine();
-		
-		System.out.println("Enter Student Street: ");
-		//scan.nextLine();
-		street = scan.nextLine();
-		
-		System.out.println("Enter Student Zipcode: ");
-		zipcode = scan.nextInt();
-		
-		//String.format("%.3f", avg);
-		
-		Student stu1 = new Student(id, name, age, gender, major, sub1, sub2, sub3);
-		stu1.createAddr(city, state, street, zipcode);
-		stu1.display();
-		double avg = stu1.calculate(3);
-		System.out.println("Total score: " + String.format("%.3f", avg));
-		stu1.task(task1, task2);;
+//		System.out.println("Enter student name: ");
+//		scan.nextLine();
+//		name = scan.nextLine();
+//		
+//		System.out.println("Enter student id: ");
+//		id = scan.nextInt();
+//		
+//		System.out.println("Enter student age: ");
+//		age = scan.nextInt();
+//		
+//		System.out.println("Enter grade for subject 1: ");
+//		sub1 = scan.nextFloat();
+//		
+//		System.out.println("Enter grade for subject 2: ");
+//		sub2 = scan.nextFloat();
+//		
+//		System.out.println("Enter grade for subject 3: ");
+//		sub3 = scan.nextFloat();
+//		
+//		System.out.println("Enter Student Gender: ");
+//		gender = scan.next().charAt(0);
+//		
+//		System.out.println("Enter Student Major: ");
+//		scan.nextLine();
+//		major = scan.nextLine();
+//		
+//		System.out.println("Enter Student first class: ");
+//		//scan.nextLine();
+//		task1 = scan.nextLine();
+//		
+//		System.out.println("Enter Student second class: ");
+//		//scan.nextLine();
+//		task2 = scan.nextLine();
+//
+//		System.out.println("Enter Student City: ");
+//		//scan.nextLine();
+//		city = scan.nextLine();
+//		
+//		System.out.println("Enter Student State: ");
+//		//scan.nextLine();
+//		state = scan.nextLine();
+//		
+//		System.out.println("Enter Student Street: ");
+//		//scan.nextLine();
+//		street = scan.nextLine();
+//		
+//		System.out.println("Enter Student Zipcode: ");
+//		zipcode = scan.nextInt();
+//		
+//		//String.format("%.3f", avg);
+//		
+//		Student stu1 = new Student(id, name, age, gender, major, sub1, sub2, sub3);
+//		stu1.createAddr(city, state, street, zipcode);
+//		stu1.display();
+//		double avg = stu1.calculate(3);
+//		System.out.println("Total score: " + String.format("%.3f", avg));
+//		stu1.task(task1, task2);;
 				
-		
-	
+		//String type, boolean car, String food, int legs, String color, char gender
+		Lion l = new Lion("mammal", true, "everything", 4, "gold", 'M');
+		l.noise("ROAAARRRR!!!!");
+		l.display();
 	}
 
 }
